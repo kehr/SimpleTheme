@@ -1,0 +1,65 @@
+.post pre,
+.post code {
+    /* 代码背景色    */
+    background-color: white;
+    border: 1px solid #e3e3e3;
+}
+tt,
+code,
+kbd,
+samp,
+pre {
+    font-family: monospace
+}
+p code,
+li code {
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    background-color: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+pre {
+    overflow-x: auto;
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 1.5
+}
+pre::-webkit-scrollbar {
+    height: 12px;
+    background-color: #34362e;
+    border-radius: 0 0 4px 4px
+}
+pre::-webkit-scrollbar-thumb:horizontal {
+    background-color: #6a6d5d;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+.highlight {
+    margin-bottom: 1.5em;
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 2.1667;
+    color: #d0d0d0;
+    background-color: #272822;
+    border: 1px solid #dbdbdb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+.highlight pre {
+    position: relative;
+    padding: 1em;
+    margin: 0
+}
+.highlight .lineno {
+    padding-right: 24px;
+    color: #8f908a
+}

@@ -1,0 +1,38 @@
+# Owner information settings
+owner:
+    name: kehr
+    email: kehr.china@gmail.com
+    github: kehr 
+    twitter: kehrwang
+    googleplus: 110913268327598096278
+    linkedin: kaixuan-wang/95/71b/385
+    sina: kehr
+    
+    
+# Site settings
+title: 凯旋
+#baseurl: ""
+url: "http://ikehr.com"
+disqusname: kehr
+description: "This is a personal blog of kaixuan. It is used to keep track of my learning experiences and reflections on life."
+
+
+# Build settings
+excerpt_separator: "\n\n"
+encoding: UTF-8
+markdown: kramdown
+permalink: pretty
+kramdown:
+    input: GFM
+    auto_ids: true
+    footnote_nr: 1
+    entity_output: as_char
+    toc_levels: 1..6
+    use_coderay: true
+
+    coderay:
+        coderay_line_numbers: nil
+        coderay_line_numbers_start: 1
+        coderay_tab_width: 4
+        coderay_bold_every: 10
+        coderay_css: style  
