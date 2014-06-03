@@ -6,7 +6,8 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    font-size: 15px;
+    font-size: 13px;
+    box-shadow: 5px  5px 8px rgba(2, 2, 2, 0.2);
 }
 .post ul,
 .post ol {

@@ -3,7 +3,11 @@ layout: page
 title: 时间轴
 permalink: /timeline/
 ---
-
+<style>
+.timeline:visited {
+    color: #000;
+}
+</style>
 
 
 
