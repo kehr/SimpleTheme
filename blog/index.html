@@ -1,0 +1,103 @@
+---
+layout: index
+title: 博客
+---
+
+
+<!-- 遍历分页后的文章 -->
+
+<div class="blog-posts-left pull-left">
+<!--<div class="blog-posts-left left">-->
+<!--<div class=" left">-->
+    
+    <div class="blog-posts">
+        <!--  <h1>Posts</h1>-->
+      <ul class="posts">
+        {% for post in paginator.posts %}
+          <li>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span>{{ post.content | split:'<!--more-->' |first }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+
+    <!--  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+    </div>
+
+
+    <div id="post-pagination">
+    
+      <!--privous-->
+      <ul class="pagination ">
+        {% if paginator.previous_page %}
+            <li  >
+              {% if paginator.previous_page == 1 %}
+                <a href="/blog/">&laquo;</a>
+              {% else %}
+                <a href="{{ paginator.previous_page_path }}">&laquo;</a>
+              {% endif %}
+            </li>
+              {% else %}
+            <li  disabled="disabled">
+              <span>&laquo;</span>
+            </li>
+        {% endif %}
+      
+        <!--  first page  -->
+        <li>
+          {% if paginator.page == 1 %}
+            <span class="current-page">1</span>
+          {% else %}
+            <a href="/blog/">1</a>
+          {% endif %}
+        </li>
+        
+        <!--  other page -->
+        {% for count in (2..paginator.total_pages) %}
+          <li>
+            {% if count == paginator.page %}
+              <span class="current-page">{{ count }}</span>
+            {% else %}
+              <a href="/blog/page{{ count }}">{{ count }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+        
+        <!-- next -->
+        {% if paginator.next_page %}
+        <li >
+          <a href="{{ paginator.next_page_path }}">&raquo;</a>
+        </li>
+          {% else %}
+        <li disabled="disabled">
+          <span>&raquo;</span>
+        </li>
+      {% endif %}
+      </ul>
+
+    </div>
+    
+</div>
+
+<div class="blog-posts-right pull-right">
+<!--<div class="right">-->
+    <div class="search">
+        Search
+    </div>
+    <div class="name-archives">
+        Name archive
+    </div>
+    <div class="tags">
+        Tags
+    </div>
+    <div class="year-archives">
+        Year archives
+    </div>
+    <div class="weibo">
+        Sina weibo
+    </div>
+    <div class="guests">
+        My guests
+    </div>
+</div>

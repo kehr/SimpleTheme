@@ -1,7 +1,7 @@
 .post pre,
 .post code {
     /* kramdown 代码背景色    */
-    background-color: #fff;
+/*    background-color: #fff;*/
     border: 1px solid #d5d5e9;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -411,14 +411,14 @@ pre::-webkit-scrollbar-thumb:horizontal {
     border-radius: 3px
 }
 .CodeRay span {
-    background-color: #fff;
+/*    background-color: #fff;*/
 }
 .CodeRay .code pre {
     padding: 1em;
     margin: 0;
     /* codeRay风格的代码背景色   */
     /*    background-color: #272822;*/
-    background-color: #fff;
+/*    background-color: #fff;*/
     border: 1px solid #dbdbdb
 }
 span.CodeRay {
@@ -458,7 +458,9 @@ table.CodeRay td {
     padding: 0 24px 0 4px
 }
 .CodeRay .code {
-    width: 100%
+    width: 95%;
+    margin: auto;
+        
 }
 ol.CodeRay {
     font-size: 10pt
