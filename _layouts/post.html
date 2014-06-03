@@ -9,13 +9,54 @@ layout: default
   </header>
 
   <article class="post-content">
-<!--      {{ content }}-->
-  {{ content | split:'more' | last }}
+  {{ content | split:'<!--more-->' | last }}
   </article>    
     
+ <hr><br>
+    <div>
+        <ul class="pager">
+            {% if page.previous %}
+              <li class="previous"><a href="{{ page.previous.url }}"> &laquo;&laquo; 上一篇 </a> </li> 
+<!--              <p>{{ page.previous.title | truncatewords:5 }}</p>-->
+            {% else %}
+              <li class="previous disabled"><a href="#"> BEGIN </a> </li> 
+            {% endif %}
+             <a href="{{ site.url }}/blog">
+                <button type="button" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-home"></span> Home
+                </button>
+            </a>
+            {% if page.next %}
+              <li class="next"><a href="{{ page.next.url }}"> 下一篇 &raquo;&raquo;</a>  </li>
+            {% else %}
+              <li class="next disabled"><a href="#"> END </a>  </li>
+            {% endif %}
+        </ul>
+        
+            
+            <ul class="post-name" style="list-style:none; ">
+            {% if page.previous %}
+              <li class="previous pull-left" style=" display:inline-block;"><a href="{{ page.previous.url }}"> {{ page.previous.title | truncatewords:5 }} </a> </li> 
+<!--              <p>{{ page.previous.title | truncatewords:5 }}</p>-->
+            {% else %}
+              <li class="previous disabled"><a href="#"> BEGIN </a> </li> 
+            {% endif %}
+
+            {% if page.next %}
+              <li class="next pull-right" style="display:inline-block;"><a href="{{ page.next.url }}"> {{ page.next.title | truncatewords:5 }}</a>  </li>
+            {% else %}
+              <li class="next disabled"><a href="#"> END </a>  </li>
+            {% endif %}
+        </ul>
+ 
+    </div>
+   <br><br><br><br><br>
     <!--添加disqus评论-->
     {% if site.disqusname and page.comments %}
         {% include disqus.html %}
     {% endif %}
-
 </div>
+
+
+
+
