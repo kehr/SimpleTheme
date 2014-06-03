@@ -36,16 +36,16 @@ layout: default
             
             <ul class="post-name" style="list-style:none; ">
             {% if page.previous %}
-              <li class="previous pull-left" style=" display:inline-block;"><a href="{{ page.previous.url }}"> {{ page.previous.title | truncatewords:5 }} </a> </li> 
+              <li class="pull-left" style=" display:inline-block;"><a href="{{ page.previous.url }}"> {{ page.previous.title | truncatewords:5 }} </a> </li> 
 <!--              <p>{{ page.previous.title | truncatewords:5 }}</p>-->
             {% else %}
-              <li class="previous disabled"><a href="#"> BEGIN </a> </li> 
+              <li class="pull-left" style=" display:inline-block;">No more </li>
             {% endif %}
 
             {% if page.next %}
-              <li class="next pull-right" style="display:inline-block;"><a href="{{ page.next.url }}"> {{ page.next.title | truncatewords:5 }}</a>  </li>
+              <li class="pull-right" style="display:inline-block;"><a href="{{ page.next.url }}"> {{ page.next.title | truncatewords:5 }}</a>  </li>
             {% else %}
-              <li class="next disabled"><a href="#"> END </a>  </li>
+              <li class="pull-right" style="display:inline-block;">No more </li>
             {% endif %}
         </ul>
  
