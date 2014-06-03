@@ -146,13 +146,20 @@ a:visited {
 }
 
 .blog-posts-right {
-    background-color: #2a7ae2;
+/*    background-color: #2a7ae2;*/
     width: 25%;
     margin-right: 6%;
 }
 .search {
-    background-color: #2deb1d;
+/*    background-color: #2deb1d;*/
     height: 50px;
+
+}
+.search div {
+    width: 100%;
+}
+.form-control{
+    width: 100px;
 }
 .name-archives {
     background-color: #800080;
