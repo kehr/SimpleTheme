@@ -158,6 +158,9 @@ a:visited {
     margin-right: 6%;
     margin-bottom: 2%
 }
+.blog-posts-right ul{
+     list-style: none;
+}
 .search {
     /*    background-color: #2deb1d;*/
     height: 50px;
@@ -171,25 +174,17 @@ a:visited {
 .form-control {
     width: 100px;
 }
-.name-archives {
-    background-color: #800080;
-    height: 200px;
-}
-.tags {
-    background-color: #505050;
-    height: 200px;
-}
-.year-archives {
-    background-color: #2a7ae2;
-    height: 200px;
-}
-.weibo {
-    background-color: #e8e8e8;
-    height: 200px;
-}
+.name-archives ,
+.tags ,
+.year-archives ,
+.weibo ,
 .guests {
-    background-color: #f21010;
-    height: 200px;
+/*    height: 200px;*/
+    width: 100%;
+    float: left;
+}
+.tags{
+    display: none;
 }
 /* Site footer ---------------------------------*/
 

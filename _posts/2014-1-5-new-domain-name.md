@@ -2,7 +2,7 @@
 layout: post
 title:  "网站有自己的域名啦！"
 description: "my web site has my own domain"
-date:   2014-01-5 
+date:   2013-01-5 
 categories: site
 image:
   feature: abstract-10.jpg
