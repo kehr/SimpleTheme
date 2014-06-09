@@ -7,6 +7,9 @@ title: 博客
 .blog:visited {
     color: #000;
 }
+.posts-archive-title{
+    color: #727272;
+}
 </style>
 
 <!-- 遍历分页后的文章 -->
@@ -16,17 +19,21 @@ title: 博客
 <!--<div class=" left">-->
     
     <div class="blog-posts">
-        <!--  <h1>Posts</h1>-->
-      <ul class="posts">
+<!--          <h1>Posts</h1>-->
+        
+      <ul class="posts ">
         {% for post in paginator.posts %}
+          <div class=" panel panel-default panel-body" style="box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);">
           <li>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <hr style="margin-top:0px">
             <span>{{ post.content | split:'<!--more-->' |first }}</span>
           </li>
+          </div>
         {% endfor %}
       </ul>
-
+        
     <!--  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
     </div>
 
@@ -102,18 +109,21 @@ title: 博客
                     </div>
                     <!-- /.col-lg-6 -->
                 </div>
+                 
+               <a href="{{ site.url  }}/blog/archives/index.html" class="posts-archive-title" > <h1 style="font-size:16px">文章分类</h1></a>
                  <hr>
+                 <div data-spy="affix" data-offset-top="200">
                  {% for category in site.categories %}
-                <a href="{{ site.url  }}/blog/archives/index.html#{{ category | first }}-ref" class="list-group-item">
+                <a href="{{ site.url  }}/blog/archives/index.html#{{ category | first }}" class="list-group-item">
+                <span class="glyphicon glyphicon-folder-open "></span>  
                 <span>{{ category | first }}</span> 
                 <span class=" badge ">{{ category | last | size }}</span></a>
 
                 {% endfor %}
-					
+				</div>
 
 					
 				</div>
-				<hr>
 			</div>	
 </div>			
 

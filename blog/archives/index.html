@@ -3,13 +3,42 @@ layout: page
 title: Archives
 ---
 
-<div class="">
-    <h2>Archives</h2>
-    <ul>
+<style>
+    a.list-group-item{
+    color: #2a7ae2;
+}
+
+/*
+.list-group-item>.badge {
+float: left;
+margin-right: 5%;
+}
+*/
+</style>
+
+<h2>文章分类</h2>
+<hr style="border:solid; ">
+{% for category in site.categories %}
+<h2 id="{{ category | first }}">{{ category | first }}</h2>
+<hr>
+<div class="list-group">
+    {% for post in category.last %}
+    <a href="{{ post.url }}" class="list-group-item"> {{ post.title }}
+    <span class="badge">{{ post.date | date:"%Y-%m-%d"}} </span>
+    </a>
+    {% endfor %}
+</div>
+{% endfor %}
+<br>
+<h2>年份归档</h2>
+<hr style="border:solid; ">
+<div class="list-group">
+
       {% for post in site.posts %}
 
         {% unless post.next %}
           <h3>{{ post.date | date: '%Y' }}</h3>
+          <hr>
         {% else %}
           {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
@@ -18,22 +47,15 @@ title: Archives
           {% endif %}
         {% endunless %}
 
-        <li>{{ post.date | date:"%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <a href="{{ post.url }}" class="list-group-item">{{ post.title }}
+        <span class="badge">{{ post.date | date:"%m-%d" }}</span>
+         
+        </a>
       {% endfor %}
-    </ul>
 
 </div>
 
 
-{% for category in site.categories %}
-<h2 id="{{ category | first }}-ref">{{ category | first }}</h2>
-<!--</span >{{ category | last | size }}</span>-->
-<ul class="arc-list">
-    {% for post in category.last %}
-        <li>{{ post.date | date:"%Y-%m-%d"}} <a href="{{ post.url }}"> {{ post.title }}</a></li>
-    {% endfor %}
-</ul>
-{% endfor %}
 
 
 

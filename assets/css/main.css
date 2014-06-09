@@ -135,6 +135,7 @@ a:visited {
 .blog-posts-left {
     /*    background-color: #727272;*/
     margin-left: 6%;
+    margin-right: 4%;
     margin-bottom: 3%;
     width: 60%;
 }
@@ -186,6 +187,10 @@ a:visited {
 .tags{
     display: none;
 }
+.glyphicon{margin-right: 4%;}
+
+.affix{position:fixed;top:15%;width: 20.5%;}
+.affix-bottom{position:absolute;}
 /* Site footer ---------------------------------*/
 
 .site-footer {
