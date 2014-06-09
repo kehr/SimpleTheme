@@ -153,10 +153,10 @@ a:visited {
 }
 .blog-posts-right {
     /*    background-color: #2a7ae2;*/
-    width: 25%;
-    max-width: 400px;
-    margin-right: 6%;
-    margin-bottom: 2%
+/*    width: 25%;*/
+/*    max-width: 400px;*/
+/*    margin-right: 6%;*/
+/*    margin-bottom: 2%*/
 }
 .blog-posts-right ul{
      list-style: none;
