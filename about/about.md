@@ -7,13 +7,38 @@ permalink: /about/
 .about:visited {
     color: #000;
 }
-
+#back-top{
+    display:none;
+}
 </style>
 
-<!--<a href="https://github.com/kehr" style=""><img class="navbar-fixed-top affix"  style="box-shadow: 0px;position: absolute; top: -1.5%; left: -0.5%; border: 0; " src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>-->
+<h2>关于我</h2>
+<span>生命为何而存在，人类为何而生存？</span>　
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<hr style="border:solid; ">
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+一个人的时候经常会想一些“终极”哲学命题。如果你发现我在发呆，我会酷酷的告诉你我在思考人生。
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+####很多时候我是这个样子：
+
+- 一个GITHUB重度用户，知乎中度用户，豆瓣小豆丫，v2ex小粉。
+
+- 一个擅长`LINUX`/`JAVA`/`C`/`PYTHON`的技术宅男。
+
+- 一个愿意冒险，勇于挑战，不断尝试新事物的极客1.0。
+
+- 一个喜欢技术，古典音乐，看书写文章的90后。
+
+- 一个热爱生活，阳光灿烂，和谐友爱的小伙伴。
+
+- 一个为了梦想北漂来京的实习生。
+
+
+
+<hr>
+
+
+<h3>留言</h3>
+
+<hr style="border:solid; ">
+ <wb:comments url="auto" border="y" fontsize="12" width="auto" appkey="3381264472" ralateuid="2612683225" ></wb:comments>

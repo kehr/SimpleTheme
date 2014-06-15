@@ -3,19 +3,13 @@ layout: post
 title:  "网站有自己的域名啦！"
 description: "my web site has my own domain"
 date:   2013-01-5 
-categories: site
-image:
-  feature: abstract-10.jpg
-  credit: 每个人都有属于自己的标志。
-  creditlink: 
+categories: WEB开发
 tags: [web]
 comments: true
 share: true
 ---
-发布网站
-<!--more-->
 <center><h2>ikehr.com</h2></center>
-
+<!--more-->
 * 又是一个无眠之夜，打了鸡血的感觉不好受，睡不着。  
 
 * 第一次买域名，第一次建站，第一次搞外汇，这个寒假弄了多少个`第一次`啊！  

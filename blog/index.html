@@ -12,12 +12,14 @@ title: 博客
 }
 </style>
 
+
 <!-- 遍历分页后的文章 -->
 
 <div class="blog-posts-left pull-left">
-<!--<div class="blog-posts-left left">-->
-<!--<div class=" left">-->
-    
+<p style="font-size:35px" >指尖上的日子</p>
+<span>用文字封存记忆</span>　
+<hr >
+
     <div class="blog-posts">
 <!--          <h1>Posts</h1>-->
         
@@ -112,18 +114,47 @@ title: 博客
                  
                <a href="{{ site.url  }}/blog/archives/index.html" class="posts-archive-title" > <h1 style="font-size:16px">文章分类</h1></a>
                  <hr>
-                 <div data-spy="affix" data-offset-top="200">
+<!--                 <div data-spy="affix" data-offset-top="200">-->
+                 <div>
                  {% for category in site.categories %}
-                <a href="{{ site.url  }}/blog/archives/index.html#{{ category | first }}" class="list-group-item">
-                <span class="glyphicon glyphicon-folder-open "></span>  
-                <span>{{ category | first }}</span> 
-                <span class=" badge ">{{ category | last | size }}</span></a>
+                 <div class="panel-group" id="accordion">
+      <div class="panel panel-default" style="border:none;">
+        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ category | first }}" class="list-group-item ">
+        <span class="glyphicon glyphicon-folder-open "></span>  
+        <span>{{ category | first | upcase }}</span> 
+        <span class="badge">{{ category | last | size }}</span></a>
+        <div id="{{ category | first }}" class="panel-collapse collapse ">
+      <div class="panel-body" style="padding:0px">
+<div class="list-group" style="margin-bottom:0px" >
+    {% for post in category.last %}
+    <a href="{{ post.url }}" class="list-group-item" style="color:#2a7ae2"> 
+<!--    <span style="margin-right:10%;">{{ post.date | date:"%Y-%m-%d"}} </span>-->
+    {{ post.title }}
+    </a>
+    {% endfor %}
+</div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
 
                 {% endfor %}
 				</div>
 
-					
+        <br> 
+        <h2>微博</h2>
+        <hr>
+<wb:share-button appkey="5s5iWI" addition="number" type="button" ralateUid="2612683225" default_text="凯旋的个人网站，期待你的交流和分享！"></wb:share-button>
+        
+        <iframe style="border-radius:5px;"  width="100%" height="700" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=700&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2612683225&verifier=30f306f1&dpc=1"></iframe>
+        
+
+                <wb:publish action="publish" type="mobile" language="zh_cn" button_type="red" button_size="middle" button_text="发微博" uid="2612683225" refer="y" default_image="" appkey="5s5iWI" ></wb:publish>
+
 				</div>
+				
 			</div>	
 </div>			
 

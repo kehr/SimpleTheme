@@ -19,7 +19,7 @@ margin-right: 5%;
 <h2>文章分类</h2>
 <hr style="border:solid; ">
 {% for category in site.categories %}
-<h2 id="{{ category | first }}">{{ category | first }}</h2>
+<h2 id="{{ category | first }}">{{ category | first | upcase }}</h2>
 <hr>
 <div class="list-group">
     {% for post in category.last %}

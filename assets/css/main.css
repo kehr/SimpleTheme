@@ -269,6 +269,29 @@ a:visited {
     width: -o-calc(41.875%);
     width: calc(41.875%);
 }
+/*back to top*/
+#back-top {
+  position: fixed;
+  bottom: 7%;
+  margin-left: 90%;
+}
+#back-top a {
+  width: 54px;
+  height: 54px;
+  display: block;
+  background: #ddd url(../imgs/bg_up_arrow.png) no-repeat center center;
+  background-color: #c9c9c9;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover {
+  background-color: #777;
+}
+
 /* Page Content styles */
 
 /* ----------------------------------------------------------*/

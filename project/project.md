@@ -2,12 +2,18 @@
 layout: page
 title: 项目
 permalink: /project/
-comments: true
+comments: false
 ---
 <style>
 .project:visited {
     color: #000;
 }
+#back-top{
+    display:none;
+}
 </style>
 
-我的一些小作品
+<h2>开源作品</h2>
+<span>天下皆知取之为取，而莫知与之为取。</span>　
+
+<hr style="border:solid; ">

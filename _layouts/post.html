@@ -8,8 +8,10 @@ layout: default
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
+<!--  <hr style="border:solid; ">-->
+  <hr>
   <article class="post-content">
-  {{ content | split:'<!--more-->' | last }}
+  {{ content }}
   </article>    
     
  <hr><br>
