@@ -129,8 +129,9 @@ title: 博客
     {% for post in category.last %}
     <a href="{{ post.url }}" class="list-group-item" style="color:#2a7ae2"> 
 <!--    <span style="margin-right:10%;">{{ post.date | date:"%Y-%m-%d"}} </span>-->
-    {{ post.title }}
+    {{ post.title }}<span class="badge">{{ post.date | date:"%Y-%m" }}</span>
     </a>
+    
     {% endfor %}
 </div>
       </div>
