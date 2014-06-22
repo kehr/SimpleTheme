@@ -30,7 +30,7 @@ title: 博客
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             <hr style="margin-top:0px">
-            <span>{{ post.content | split:'<!--more-->' |first }}</span>
+            <span>{% if post.description %} {{ post.description }} {% else %} {{ post.content | split:'<!--more-->' |first }} {% endif %}</span>
           </li>
           </div>
         {% endfor %}
@@ -128,8 +128,7 @@ title: 博客
 <div class="list-group" style="margin-bottom:0px" >
     {% for post in category.last %}
     <a href="{{ post.url }}" class="list-group-item" style="color:#2a7ae2"> 
-<!--    <span style="margin-right:10%;">{{ post.date | date:"%Y-%m-%d"}} </span>-->
-    {{ post.title }}<span class="badge">{{ post.date | date:"%Y-%m" }}</span>
+    {{ post.title }}<span class="badge">{{ post.date | date:"%m-%d" }}</span>
     </a>
     
     {% endfor %}
