@@ -21,13 +21,23 @@ permalink: /timeline/
 <ul class="timeline">
 
     <li>
+        <div class="year">2014年</div>
+        <div class="month">六月</div>
+        <div class="day">25</div>
+        <div class="content">
+        <pre>
+UPYUN开发者大赛结束，获一等奖。<a href="/images/blog/upyun.jpg">猛戳</a>
+</pre>
+        </div>
+    </li>
 
+    <li>
         <div class="year">2014年</div>
         <div class="month">六月</div>
         <div class="day">06</div>
         <div class="content">
-            <pre>
-重写博客前端，把博客迁移到GitCafe。同步更新Github和GitCafe内容。
+        <pre>
+重写博客前端，把博客迁移到 GitCafe。同步更新 Github 和 GitCafe 内容。
 （最近没有休息好...，不过百度的工作还是很开心的。）
 </pre>
         </div>
@@ -39,7 +49,7 @@ permalink: /timeline/
         <div class="day">04</div>
         <div class="content">
             <pre>
-婉拒BestMinr百思科技offer，开始在百度的实习生活。
+婉拒 BestMinr 百思科技offer，开始在百度的实习生活。
 </pre>
         </div>
     </li>

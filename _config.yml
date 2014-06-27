@@ -16,7 +16,7 @@ title: 凯旋
 url: "http://ikehr.com" 
 #url: "http://127.0.0.1:4000"
 disqusname: kehr
-paginate: 8
+paginate: 6
 paginate_path: "/blog/page:num"
 description: "This is a personal blog of kaixuan. It is used to keep track of my learning experiences and reflections on life."
 
