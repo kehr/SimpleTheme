@@ -13,7 +13,7 @@ layout: post-default
   <article class="post-content">
   {{ content }}
   </article>    
-    
+    <wb:share-button appkey="5s5iWI" addition="number" type="button" ralateUid="2612683225" default_text="【博文分享】：《{{ page.title }}》 | {{ page.description }}"></wb:share-button>
  <hr><br>
     <div>
         <ul class="pager">
@@ -41,13 +41,13 @@ layout: post-default
               <li class="pull-left" style=" display:inline-block;"><a href="{{ page.previous.url }}"> {{ page.previous.title | truncatewords:5 }} </a> </li> 
 <!--              <p>{{ page.previous.title | truncatewords:5 }}</p>-->
             {% else %}
-              <li class="pull-left" style=" display:inline-block;">No more </li>
+              <li class="pull-left" style=" display:inline-block;"> </li>
             {% endif %}
 
             {% if page.next %}
               <li class="pull-right" style="display:inline-block;"><a href="{{ page.next.url }}"> {{ page.next.title | truncatewords:5 }}</a>  </li>
             {% else %}
-              <li class="pull-right" style="display:inline-block;">No more </li>
+              <li class="pull-right" style="display:inline-block;"> </li>
             {% endif %}
         </ul>
  

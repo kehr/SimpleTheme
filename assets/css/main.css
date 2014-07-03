@@ -336,7 +336,8 @@ a:visited {
 .post li,
 .post p,
 .posts p {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+    line-height: 2;
 }
 .posts li {
     margin-bottom: 30px;
@@ -355,6 +356,10 @@ a:visited {
     font-size: 15px;
     color: #818181;
     margin-bottom: 10px;
+}
+blockquote p{
+    font-size:15px;
+    line-height:inherit;
 }
 /* Post styles */
 
@@ -393,22 +398,23 @@ a:visited {
 }
 .post-content h2 {
     font-size: 32px;
-    letter-spacing: 1.25px;
+    letter-spacing: 0px;
 }
 .post-content h3 {
     font-size: 26px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 .post-content h4 {
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 .post-content blockquote {
-    border-left: 4px solid #e8e8e8;
+    /*border-left: 4px solid #e8e8e8;*/
+    border-left: 4px solid #ff0000;
     padding-left: 20px;
     font-size: 18px;
     opacity: .6;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-style: italic;
     margin: 30px 0;
 }
