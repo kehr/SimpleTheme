@@ -28,7 +28,8 @@ title: 博客
           <div class=" panel panel-default panel-body" style="box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);">
           <li>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class=""></span>
+            <span class="glyphicon glyphicon-calendar post-date"> {{ post.date | date: "%b-%-d-%Y" }}</span>
             <hr style="margin-top:0px">
             <span>{% if post.description %} {{ post.description }} {% else %} {{ post.content | split:'<!--more-->' |first }} {% endif %}</span>
           </li>
