@@ -29,7 +29,7 @@ title: 博客
           <li>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <span class=""></span>
-            <span class="glyphicon glyphicon-calendar post-date"> {{ post.date | date: "%b-%-d-%Y" }}</span>
+            <span class="glyphicon glyphicon-calendar post-date"> {{ post.date | date: "%b，%-d %Y" }}</span>
             <hr style="margin-top:0px">
             <span>{% if post.description %} {{ post.description }} {% else %} {{ post.content | split:'<!--more-->' |first }} {% endif %}</span>
           </li>

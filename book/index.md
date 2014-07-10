@@ -24,7 +24,7 @@ table{
 }
 </style>
 <h2>我的书单</h2>
-<span>学习是一种素养，读书是一种习惯。</span>　　
+<span>让阅读成为习惯</span>　　
 
 <hr style="border:solid; ">
  

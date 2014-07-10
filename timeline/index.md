@@ -14,7 +14,7 @@ permalink: /timeline/
 
 
 <h2>蓦然回首</h2>
-<span>用文字记录曾今逝去的青春，在时间的倒影中留下自己最真诚的怀念。</span>　
+<span>用时间记录逝去的青春</span>　
 
 <hr style="border:solid; ">
 
