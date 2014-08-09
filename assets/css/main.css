@@ -222,6 +222,8 @@ a:visited {
 }
 .site-footer ul {
     list-style: none;
+    /*margin-bottom: 0px;*/
+
 }
 .site-footer li {
     display: inline;
@@ -232,13 +234,13 @@ a:visited {
     color: #828282;
 }
 .footer-col-1 {
-    width: 270px;
+    width: 27.5%;
     /*fallback*/
-    width: -webkit-calc(35% - 10px);
+/*    width: -webkit-calc(35% - 10px);
     width: -moz-calc(35% - 10px);
     width: -o-calc(35% - 10px);
-    width: calc(35% - 10px);
-    margin-right: 10px;
+    width: calc(35% - 10px);*/
+    /*margin-right: 10px;*/
 }
 .footer-col-1 ul li {
     margin-right: 10px;
@@ -253,21 +255,23 @@ a:visited {
     display: inline;
 }
 .footer-col-2 {
-    width: 175px;
+    width: 40%;
     /*fallback*/
-    width: -webkit-calc(23.125% - 10px);
+/*    width: -webkit-calc(23.125% - 10px);
     width: -moz-calc(23.125% - 10px);
     width: -o-calc(23.125% - 10px);
-    width: calc(23.125% - 10px);
-    margin-right: 10px
+    width: calc(23.125% - 10px);*/
+    margin-right: 5%;
+    margin-bottom: 10px;
+    text-align:center;
 }
 .footer-col-3 {
-    width: 335px;
+    width: 27.5%;
     /*fallback*/
-    width: -webkit-calc(41.875%);
+/*    width: -webkit-calc(41.875%);
     width: -moz-calc(41.875%);
     width: -o-calc(41.875%);
-    width: calc(41.875%);
+    width: calc(41.875%);*/
 }
 /*back to top*/
 #back-top {

@@ -15,7 +15,7 @@ layout: post-default
   <article class="post-content">
   {{ content }}
   </article>    
-    <wb:share-button appkey="5s5iWI" addition="number" type="button" ralateUid="2612683225" default_text="【博文分享】：《{{ page.title }}》 | {{ page.description }}"></wb:share-button>
+
  <hr><br>
     <div>
         <ul class="pager">
@@ -54,10 +54,14 @@ layout: post-default
         </ul>
  
     </div>
-   <br><br><br><br><br>
+   <br><br>
+   <hr style="border:solid; ">
     <!--添加disqus评论-->
-    {% if site.disqusname and page.comments %}
-        {% include disqus.html %}
+<!--     /{/% if site.disqusname and page.comments %/}/
+        /{/% include disqus.html %/}/
+    /{/% endif %/}/ -->
+    {% if page.comments %}
+        {% include duoshuo.html %}
     {% endif %}
 </div>
 
