@@ -81,7 +81,7 @@ a:visited {
 /* Site header */
 
 .site-header {
-    border-top: 5px solid #333;
+    /*border-top: 5px solid #333;*/
     color: #800080;
     border-bottom: 1px solid #e8e8e8;
     min-height: 40px;
