@@ -327,6 +327,7 @@ a:visited {
 */
 /*    margin-left: 15%;*/
     box-shadow: 7px 20px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 /*
 .post img:hover {
