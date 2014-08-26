@@ -29,15 +29,14 @@ table{
 <hr style="border:solid; ">
  
  <div class="book-list">
- <script type="text/javascript" src="http://www.douban.com/service/badge/kehr/?selection=latest&amp;picsize=medium&amp;show=collection&amp;n=20&amp;cat=drama%7Cmovie%7Cbook%7Cmusic&amp;columns=6"></script>
+ <script type="text/javascript" src="http://www.douban.com/service/badge/kehr/?selection=latest&amp;picsize=medium&amp;show=collection&amp;hidelogo=on&amp;hideself=on&amp;n=20&amp;cat=drama%7Cbook%7C&amp;columns=6"></script>
  </div>
  <hr>
 
-这里放的有我看过的书，平时喜欢听的专辑，还有看过的电影。
-
-你也可以在下面的推荐区留下自己喜欢的书和音乐，类型不限，欢迎推荐！
+图书交流区，欢迎推荐！我读书少，你可别骗我。
 
 <hr>
 <h3>你的推荐</h3>
+
 <hr style="border:solid; ">
  <wb:comments url="auto" border="y" fontsize="12" width="auto" appkey="3381264472" ralateuid="2612683225" ></wb:comments>
