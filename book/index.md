@@ -32,6 +32,19 @@ table{
  <script type="text/javascript" src="http://www.douban.com/service/badge/kehr/?selection=latest&amp;picsize=medium&amp;show=collection&amp;hidelogo=on&amp;hideself=on&amp;n=20&amp;cat=drama%7Cbook%7C&amp;columns=6"></script>
  </div>
  <hr>
+<h3>其它</h3>
+荆柯守：
+
+- 《青帝》
+
+- 《风起紫罗峡》
+
+- 《易鼎》
+
+Linus:
+
+- 《Just for fun》
+ <hr>
 
 图书交流区，欢迎推荐！我读书少，你可别骗我。
 
